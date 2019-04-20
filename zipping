@@ -1,0 +1,2 @@
+rm redue.zip
+zip -r redue.zip *py zipping *py *md LICENSE *json --exclude \*.ods --exclude \*~
