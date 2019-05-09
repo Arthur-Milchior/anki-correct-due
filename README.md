@@ -75,7 +75,8 @@ The problem may also occur if, in the browser, you select
 `Cards>Reposition` and choose a value at least equal to 1,000,000.
 
 ## Version 2.0
-None
+Port by [lovac42](https://github.com/lovac42/anki-correct-due)
+
 ## Links, licence and credits
 
 Key         |Value
