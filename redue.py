@@ -1,5 +1,5 @@
-from aqt.qt import QAction
 from aqt import mw
+from aqt.qt import QAction
 
 CARD_NEW = 0
 NEW_CARDS_RANDOM = 0
@@ -7,8 +7,8 @@ NEW_CARDS_RANDOM = 0
 def redue():
     col = mw.col
     sched = col.sched
-
-    cids = col.db.list(f"select id from cards order by id and type = {CARD_NEW}")
+    
+    cids = self.db.list(f"select id from cards order by id and type = {CARD_NEW} and due > 1000000")
     sched.sortCards(cids)
     col.conf['nextPos'] = col.db.scalar(
         f"select max(due)+1 from cards where type = {CARD_NEW}") or 0
