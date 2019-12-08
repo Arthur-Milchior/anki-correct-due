@@ -8,7 +8,7 @@ def redue():
     col = mw.col
     sched = col.sched
     
-    cids = self.db.list(f"select id from cards order by id and type = {CARD_NEW} and due > 1000000")
+    cids = mw.col.db.list(f"select id from cards where type = {CARD_NEW} and due > 1000000 order by id")
     sched.sortCards(cids)
     col.conf['nextPos'] = col.db.scalar(
         f"select max(due)+1 from cards where type = {CARD_NEW}") or 0
