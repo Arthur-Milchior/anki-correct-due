@@ -1,11 +1,11 @@
 # Correct new card ordering, clean due number
 ## Rationale
 This add-on solve a problem related to the order of new card. This
-problem only appear when the collection is quite big (I had more than
-100,000 cards before the problem started to occur), and if you play a
-lot with the configuration, trying things. Note that this add-on only
-have to be used once, and the bug will be corrected on ankiweb,
-ios, ankidroid and any other computer.
+problem only appear either:
+* if you download a shared deck with this problem (you have no way to
+know whether it is the case while downloading)
+* if you edited a note, and created new cards of this note, when some
+  cards where already reviewed before version 2.1.16 of Anki.
 
 More precisely, anki is supposed to show you all new cards of a note
 before showing you cards of another note. There are exceptions to this
