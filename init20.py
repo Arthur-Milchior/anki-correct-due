@@ -26,13 +26,14 @@ REORDER_BY="due,id"
 
 # =====================================
 
-import anki, random
-from anki.hooks import wrap
-from aqt.qt import QAction
-from aqt import mw
-from aqt.utils import tooltip
-from anki.utils import ids2str, intTime
+import random
 
+import anki
+from anki.hooks import wrap
+from anki.utils import ids2str, intTime
+from aqt import mw
+from aqt.qt import QAction
+from aqt.utils import tooltip
 
 NEW_CARDS_RANDOM = 0
 
